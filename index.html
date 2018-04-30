@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+          integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/date.css">
+	<title>Form</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<style type="text/css">
+	 .spoiler_body {display:none;}
+	 .spoiler_links {cursor:pointer;}
+	</style>
+</head>
+<body>
+<section>
+	<img class="bg" src="images/bg.png">
+	<div class="main">
+	<div class="container">
+
+		<div class="title">
+			<span>Change Account Informations</span>
+		</div>
+		
+
+		<div class="form-1">
+			<span class="change">Change Email</span>
+			<br>
+			<span class="text">Current Email</span>
+			<br>
+			<span class="felix">felix@cyberelief.com</span>
+			<form class="text" name="email" method="post" action="" >
+				<label for="newemail">New Email</label>
+				<br>
+				<input type="text" name="newemail">
+				<br>
+				<label for="newemail"> Confirm New Email</label>
+				<br>
+				<input type="text" name="newemail">
+			</form>	
+
+			<button class="update">Update email</button>
+		</div>
+
+
+		<div class="form-2">
+			<span class="change">Change password</span>
+			<br>
+			<form class="text" name="passw" method="post" action="" >
+				<label for="passw">Old Password</label>
+				<br>
+				<input type="text" name="passw">
+				<br>
+				<label for="passw">New Password</label>
+				<br>
+				<input type="text" name="passw">
+				<br>
+				<label for="newemail">Confirm New Password</label>
+				<br>
+				<input type="text" name="passw">
+			</form>	
+
+			<button class="update">Update Password</button>	
+		</div>
+		<div style="clear:both; height:0;"></div>
+
+		<div class="title">
+			<span>Billing Information / Contact Information</span>
+		</div>
+
+		<form class="text" name="info" method="post" action="" >
+			<div class="form-3 text">
+				<label for="f-name">First name</label>
+				<br>
+				<input type="text" name="f-name">
+				<br>
+				<label for="l-name">Last Name</label>
+				<br>
+				<input type="text" name="l-name">
+				<br>
+				<label for="address">Street address</label>
+				<br>
+				<input type="text" name="address">
+				<br>
+				<input type="text" name="address">
+				<br>
+				<label for="phone">Phone</label>
+				<br>
+				<input type="text" name="phone">
+				<br>	
+			</div>
+
+			<div class="form-4 text">	
+				<label for="l-name">Last Name</label>
+				<br>
+				<input type="text" name="l-name">
+				<br>
+				<label for="l-name">Last Name</label>
+				<br>
+				<input type="text" name="l-name">
+				<br>
+				<label for="city">City</label>
+				<br>
+				<input type="text" name="city">
+				<br>
+				<span class="text">State</span>
+				<br>
+				<select class="option">
+					<option></option>i
+					<option>Quebec</option>
+					<option>Quebec</option>
+					<option>Quebec</option>
+				</select>
+				<br>
+				<span class="text">Country</span>
+				<br>
+				<select class="option">
+					<option></option>
+					<option>Canada</option>
+					<option>Canada</option>
+					<option>Canada</option>
+				</select>
+				<br>
+				<label for="z-code">Zip code</label>
+				<br>
+				<input class="z-code" type="text" name="z-code">
+			</div>
+	
+			<div style="clear:both; height:0;"></div>
+
+			<div class="title">
+				<span>Medical Details</span>
+			</div>
+
+			<div class="form-5 text">
+				<label for="d-name">Doctor Name</label>
+				<br>
+				<input type="text" name="d-name">
+				<br>
+				<label for="dc-name">Doctor Clinic Name</label>
+				<br>
+				<input type="text" name="dc-name">
+				<br>
+				<label for="address">Street address</label>
+				<br>
+				<input type="text" name="address">
+				<br>
+				<input type="text" name="address">
+				<br>
+				<span class="text">State</span>
+				<br>
+				<select class="option">
+					<option></option>
+					<option>Quebec</option>
+					<option>Quebec</option>
+					<option>Quebec</option>
+				</select>
+				<br>
+				<label for="ver-ws">Verification Website</label>
+				<br>
+				<input type="text" name="ver-ws">
+				<br>
+				<span class="text">Recomendation Date</span>
+				<br>
+				<input type="text" id="datepicker"> <!-- календарь -->
+				<br>
+				<button class="reg">Registration</button>
+
+			</div>
+		</form>
+		<div style="clear:both; height:130px;"></div>
+<!-- popup -->
+		<div class="b-container">
+		    <a href="javascript:PopUpShow()">Have a question?<a>
+		    <img src="">
+		</div>
+		<div class="b-popup" id="popup1">
+		    <div class="b-popup-content">
+		        Send your question by email answer@rm.com<br>
+		    <a href="javascript:PopUpHide()">Ok</a>
+		    </div>
+		</div>
+<!-- popup -->
+
+<!-- spoiler -->
+	<div>
+		<button class="spoiler_links">Thanks for your registration!</button>
+		<div class="spoiler_body"><img src="images/thanks.png"></div>
+	</div>
+<!-- spoiler -->
+
+	<script>
+		$(document).ready(function(){
+		 $('.spoiler_links').click(function(){
+		  $(this).parent().children('div.spoiler_body').toggle('slow');
+		  return false;
+		 });
+		$(".spoiler_links").click(function(){
+   		 $(".spoiler_body").animate({left: '+=2000px'}, 6000);
+   		 });
+		});
+
+		$(document).click(function(){
+		$("div[class^='spoiler_body']").hide('normal');
+		});
+
+		$( function() {
+		    $( "#datepicker" ).datepicker();
+		});
+
+		$(document).ready(function(){
+			    PopUpHide();
+		});
+			
+		function PopUpShow(){
+			$("#popup1").show();
+			}
+			function PopUpHide(){
+			$("#popup1").hide();
+		}
+	</script>
+</section>	
+</body>
+</html>

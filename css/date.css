@@ -1,0 +1,104 @@
+@font-face  {
+	font-family: 'Ubuntu', sans-serif;
+}
+* {
+    margin: none;
+    text-decoration: none;
+    padding: none;
+}
+#datepicker {
+	width: 70px;
+	margin: 0;
+	padding: 0;
+}
+.ui-datepicker-title {
+	color: white;
+	background-color: #a9ca44;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 1.5px;
+	position: relative;
+	z-index: 35;
+	margin-top: -19px;
+}
+.ui-datepicker-calendar {
+	width: 100%;
+	background-color: white; 
+	color: #8a5c74;
+}
+.ui-state-default {
+	color: #8a5c74;
+	font-family: 'Ubuntu', sans-serif;
+}
+thead   {
+	background-color: #dddddd;
+	font-family: 'Ubuntu', sans-serif;	
+	line-height: 2.3;
+}
+th {	
+	font-weight: normal;
+}
+td {
+	padding: 5px 0 3px 8px;
+}
+table {
+	border-spacing: 0!important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+   border: none;
+   text-align: center;
+   border-radius: 5px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+   background-color: transparent!important;  
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+   background-color: #A9CA44!important;
+   border: none;
+   color: white;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
+   background-color: #DDDDDD!important;
+   color: black;
+}
+.ui-icon-circle-triangle-w:before {
+	position: absolute;
+	z-index: 36;
+	content: "\f104";
+	color: white;
+	top: 11px;
+	left: 8px;
+	font-size: 13px;
+	text-align: left;
+	background: 
+}
+.ui-icon-circle-triangle-e:after {
+	position: absolute;
+	z-index: 37;
+	content: "\f103";
+	color: white;
+	top: 11px;
+	right: 8px;
+	font-size: 13px;
+	text-align: right;
+}
+.ui-datepicker-header .ui-widget-header .ui-helper-clearfix .ui-corner-all {
+	display: none;
+}
+.ui-icon-circle-triangle-w  {
+	color: transparent;
+}
+.ui-icon-circle-triangle-e  {
+	color: transparent;
+}
+.ui-state-default {
+	padding: 5px;
+}
+#ui-datepicker-div {
+	border: 1px solid #dddddd;
+	padding-bottom: 5px;
+}
